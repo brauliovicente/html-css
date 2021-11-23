@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens flexíveis</title>
+</head>
+<body>
+
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente 
+        e diminua o tamanho do seu navegador.</p>
+
+    <picture>
+        <source media="(max-width:750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width:1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem flexível funciona">
+    </picture>
+
+    <h1>Reproduzindo audio</h1>
+    <p>Vamos aprender a reproduzir áudios em HMTL5</p>
+  <audio preload="metadata" autoplay controls loop>
+      <source src="midias/01. RPG (Lhast Intro).mp3" type="audio/mpeg">
+      <source src="midias/01. RPG (Lhast Intro).ogg" type="audio/ogg">
+      <source src="midias/01. RPG (Lhast Intro).wav" type="audio/wav">
+      <p>Infelizmente seu navegador não consegue reproduzir áudio.
+      <a href="midias/01. RPG (Lhast Intro).mp3">Clica aqui para baixar o arquivo em MP3</a></p>
+  </audio>
+
+  <h1>Reproduzindo videos</h1>
+  <h2>Inserindo videos hospedados localmente</h2>
+  <p>Este vídeo está alocado no meu próprio servidor.</p>
+  <video width="500" poster="imagens/thumb-hardware.png" controls>
+      <source src="midias/meu video.mp4" type="video/mp4">
+      <source src="midias/meu video.m4v" type="video/m4v">
+      <source src="midias/meu video.webm" type="video/webm">
+      <p>Infelizmente seu navegador não consegue reproduzir vídeo</p>
+  </video>
+
+
+  <h2>Inserindo vídeos do youtube</h2>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/eF9Qoc6p_4Q" 
+  frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+  allowfullscreen>
+
+  </iframe>
+
+  
+    
+</body>
+</html>
